@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.0.4.final using JasperReports Library version 6.0.4  -->
+<!-- 2021-12-30T16:34:27 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Order" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="e17941de-2cf3-4d9b-b8fe-241675ceae2e">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="siddharth"/>
+	<queryString>
+		<![CDATA[SELECT ncs_cloud.ncs_ordermanagement.gst,
+	ncs_cloud.ncs_ordermanagement.name,
+	ncs_cloud.ncs_ordermanagement.model_no,
+	ncs_cloud.ncs_ordermanagement.quantity,
+	ncs_cloud.ncs_ordermanagement.price,
+	ncs_cloud.ncs_ordermanagement.image_id
+FROM ncs_cloud.ncs_ordermanagement]]>
+	</queryString>
+	<field name="name" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="image_id" class="java.lang.Long">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="model_no" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="quantity" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="price" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="gst" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<group name="name">
+		<groupExpression><![CDATA[$F{name}]]></groupExpression>
+	</group>
+	<group name="image_id">
+		<groupExpression><![CDATA[$F{image_id}]]></groupExpression>
+	</group>
+	<group name="model_no">
+		<groupExpression><![CDATA[$F{model_no}]]></groupExpression>
+	</group>
+	<group name="quantity">
+		<groupExpression><![CDATA[$F{quantity}]]></groupExpression>
+	</group>
+	<group name="price">
+		<groupExpression><![CDATA[$F{price}]]></groupExpression>
+	</group>
+	<group name="gst">
+		<groupExpression><![CDATA[$F{gst}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="261" y="35" width="100" height="30" uuid="0206182d-2b30-4c08-9ea3-dc44797dea5b"/>
+				<text><![CDATA[hkgsvdfyge]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="85" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="55" width="95" height="30" uuid="06eeae80-3f83-49bc-a24f-64575e5052d9"/>
+				<textFieldExpression><![CDATA[$F{name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="95" y="55" width="92" height="30" uuid="961c8a42-9927-4091-a16a-11d9f0388474"/>
+				<textFieldExpression><![CDATA[$F{image_id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="187" y="55" width="92" height="30" uuid="99c06834-935b-4a00-b2f8-c9aa7b8434b8"/>
+				<textFieldExpression><![CDATA[$F{model_no}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="279" y="55" width="92" height="30" uuid="45786a1c-c763-42dd-964d-c79230db1190"/>
+				<textFieldExpression><![CDATA[$F{quantity}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="371" y="55" width="92" height="30" uuid="3e49666a-51a6-4bc9-96f7-7a0221281c7c"/>
+				<textFieldExpression><![CDATA[$F{price}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="463" y="55" width="92" height="30" uuid="9ffa8e1f-bd2c-4d33-9279-080f24461c73"/>
+				<textFieldExpression><![CDATA[$F{gst}]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch"/>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

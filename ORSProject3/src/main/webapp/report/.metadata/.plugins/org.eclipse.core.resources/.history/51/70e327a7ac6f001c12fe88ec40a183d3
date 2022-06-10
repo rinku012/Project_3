@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.0.4.final using JasperReports Library version 6.0.4  -->
+<!-- 2022-01-07T16:56:26 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="OrderTest" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="90221427-dd47-48ea-9fd8-ad4818d418b0">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter "/>
+	<queryString>
+		<![CDATA[SELECT ncs_cloud.ncs_ordermanagement.quantity,
+	ncs_cloud.ncs_ordermanagement.gst,
+	ncs_cloud.ncs_ordermanagement.model_no,
+	ncs_cloud.ncs_ordermanagement.image_id,
+	ncs_cloud.ncs_ordermanagement.price,
+	ncs_cloud.ncs_ordermanagement.name
+FROM ncs_cloud.ncs_ordermanagement]]>
+	</queryString>
+	<field name="quantity" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="gst" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="model_no" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="image_id" class="java.lang.Long">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="price" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="name" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<group name="quantity">
+		<groupExpression><![CDATA[$F{quantity}]]></groupExpression>
+	</group>
+	<group name="gst">
+		<groupExpression><![CDATA[$F{gst}]]></groupExpression>
+	</group>
+	<group name="model_no">
+		<groupExpression><![CDATA[$F{model_no}]]></groupExpression>
+	</group>
+	<group name="image_id">
+		<groupExpression><![CDATA[$F{image_id}]]></groupExpression>
+	</group>
+	<group name="price">
+		<groupExpression><![CDATA[$F{price}]]></groupExpression>
+	</group>
+	<group name="name">
+		<groupExpression><![CDATA[$F{name}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="42" width="95" height="30" uuid="0f6cab3b-14d9-4b1b-8761-c3e7cd0467ef"/>
+				<textFieldExpression><![CDATA[$F{quantity}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="95" y="42" width="92" height="30" uuid="b9b66b1d-55d9-409a-95ea-c2fcc351a63e"/>
+				<textFieldExpression><![CDATA[$F{gst}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="187" y="42" width="92" height="30" uuid="a608b32c-23fe-41b9-87cc-33bd256eff09"/>
+				<textFieldExpression><![CDATA[$F{model_no}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="279" y="42" width="92" height="30" uuid="6648a5f6-c0cb-48c6-a735-5294fcf89f63"/>
+				<textFieldExpression><![CDATA[$F{image_id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="371" y="42" width="92" height="30" uuid="0870697f-f017-42de-971f-6750f20f971a"/>
+				<textFieldExpression><![CDATA[$F{price}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="463" y="42" width="92" height="30" uuid="5c061f22-555f-46db-a266-a605f0c432c1"/>
+				<textFieldExpression><![CDATA[$F{name}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="9" width="95" height="30" uuid="971e23c8-d9b7-48a5-971f-cccbe43e45c8"/>
+				<text><![CDATA[quantity]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="80" y="9" width="92" height="30" uuid="baab48a8-f0fd-4f87-9aa6-9ce31398ee60"/>
+				<text><![CDATA[gst]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="180" y="9" width="92" height="30" uuid="fdd06fff-a6f4-4b6e-b89b-43f36aaa85da"/>
+				<text><![CDATA[model_no]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="279" y="9" width="92" height="30" uuid="7c9e0d18-d489-429a-839c-ed4d6dbef857"/>
+				<text><![CDATA[image_id]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="371" y="9" width="92" height="30" uuid="ec449637-fc51-49cf-bccd-0bc63c81226b"/>
+				<text><![CDATA[price]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="460" y="9" width="92" height="30" uuid="719401d7-f2e7-40fd-94d0-2991bb45ec8d"/>
+				<text><![CDATA[name]]></text>
+			</staticText>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
